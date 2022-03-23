@@ -1,5 +1,4 @@
 import 'package:desafio_capyba/screens/base/root_page.dart';
-import 'package:desafio_capyba/screens/signin/signin_screen.dart';
 import 'package:desafio_capyba/store/user_manager_store.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -24,11 +23,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Capyba Challenge',
-      // darkTheme: ThemeData(
-      //   brightness: Brightness.dark,
-      // ),
       themeMode: ThemeMode.dark,
-      home: SignInScreen(),
+      home: RootPage(),
     );
   }
 }

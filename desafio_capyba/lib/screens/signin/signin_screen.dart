@@ -51,7 +51,9 @@ class SignInScreen extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.fromLTRB(10, 30, 20, 10),
             child: Observer(builder: (_){
-              return Form(
+              return signInStore.loading ?
+                   SizedBox(height: MediaQuery.of(context).size.height,child: const Center(child: CircularProgressIndicator(backgroundColor: Colors.transparent, valueColor: AlwaysStoppedAnimation<Color>(Colors.white)))) :
+               Form(
                 key: signInStore.formKey,
                 child: Column(
                   children: [

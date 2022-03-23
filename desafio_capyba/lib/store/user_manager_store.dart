@@ -22,5 +22,10 @@ abstract class _UserManagerStore with Store {
     setUser(user);
   }
 
+  Future<void> sendEmailVerification() async {
+    await UserRepository().sendEmailVerification();
+
+  }
+
 
 }

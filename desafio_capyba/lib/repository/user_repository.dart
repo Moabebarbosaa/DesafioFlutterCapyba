@@ -48,6 +48,17 @@ class UserRepository {
     }
   }
 
+  Future<void> sendEmailVerification() async {
+    try {
+      User? userFirebase =  _auth.currentUser;
+      await userFirebase?.sendEmailVerification();
+
+    } on FirebaseAuthException catch (e) {
+      print('UserRepository.updateName | $e');
+      return Future.error(e.code);
+    }
+  }
+
   Future<UserModel> signIn(UserModel user) async {
     try {
       final result = await _auth.signInWithEmailAndPassword(
@@ -73,5 +84,3 @@ class UserRepository {
     );
   }
 }
-
-// await userFirebase?.sendEmailVerification();
