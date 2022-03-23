@@ -34,4 +34,4 @@
   <p> :x: O Firebase pode ter access rules que permitam que somente pessoas logadas possam e com e-mail verificado possam acessar os documentos da collection "restricted"
   
 ### Observações
-  <p> :bangbang: APK  :arrow_right: https://github.com/Moabebarbosaa/DesafioFlutterCapyba/tree/main/apk
+  * APK  :arrow_right: https://github.com/Moabebarbosaa/DesafioFlutterCapyba/tree/main/apk
